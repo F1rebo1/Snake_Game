@@ -1,0 +1,132 @@
+/* GLOBAL REQUIREMENTS */
+
+.scoreContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+/* LARGE SCREENS > 768px */
+
+@media screen and (min-width: 768px) {
+    :root {
+        --game-grid-color: aqua;
+        --game-grid-row-dash-color: purple;
+        --game-grid-cell-color: yellow;
+        --game-cell-borders: 1px dashed var(--game-grid-row-dash-color);
+
+        --game-cell-size: 35px;
+    }
+
+    /* Setting game grid styles */
+
+    .gameGrid{
+        border: 1px solid black;
+        background-color: var(--game-grid-color);
+        justify-content: center;
+        max-width: fit-content;
+    }
+
+    .gridRow{
+        border: 1px dashed var(--game-grid-row-dash-color);
+        /* max-width: 700px; */
+        height: var(--game-cell-size);
+        overflow: hidden;
+    }
+
+    .cell{
+        background-color: var(--game-grid-cell-color);
+        border-bottom: var(--game-cell-borders);
+        width: var(--game-cell-size);
+        height: var(--game-cell-size);
+        float: left;
+    }
+
+    #col-1,#col-2,#col-3,#col-4,#col-5,#col-6,#col-7,#col-8,#col-9,#col-10,
+    #col-11,#col-12,#col-13,#col-14,#col-15,#col-16,#col-17,#col-18,#col-19,#col-20{
+        border-right: var(--game-cell-borders);
+    }
+}
+
+/* MID-SIZE SCREENS > 482px AND < 768px */
+
+@media screen and (min-width: 482px) and (max-width: 767px) {
+    :root {
+        --game-grid-color: aqua;
+        --game-grid-row-dash-color: purple;
+        --game-grid-cell-color: yellow;
+        --game-cell-borders: 1px dashed var(--game-grid-row-dash-color);
+
+        --game-cell-size: 25px;
+    }
+
+    /* Setting game grid styles */
+
+    .gameGrid{
+        border: 1px solid black;
+        background-color: var(--game-grid-color);
+        justify-content: center;
+        max-width: fit-content;
+    }
+
+    .gridRow{
+        border: 1px dashed var(--game-grid-row-dash-color);
+        /* max-width: 700px; */
+        height: var(--game-cell-size);
+        overflow: hidden;
+    }
+
+    .cell{
+        background-color: var(--game-grid-cell-color);
+        border-bottom: var(--game-cell-borders);
+        width: var(--game-cell-size);
+        height: var(--game-cell-size);
+        float: left;
+    }
+
+    #col-1,#col-2,#col-3,#col-4,#col-5,#col-6,#col-7,#col-8,#col-9,#col-10,
+    #col-11,#col-12,#col-13,#col-14,#col-15,#col-16,#col-17,#col-18,#col-19,#col-20{
+        border-right: var(--game-cell-borders);
+    }
+}
+
+/* SMALL SCREENS > 320px AND < 482px */
+
+@media screen and (min-width: 320px) and (max-width: 481px) {
+    :root {
+        --game-grid-color: aqua;
+        --game-grid-row-dash-color: purple;
+        --game-grid-cell-color: yellow;
+        --game-cell-borders: 1px dashed var(--game-grid-row-dash-color);
+
+        --game-cell-size: 15px;
+    }
+
+    /* Setting game grid styles */
+
+    .gameGrid{
+        border: 1px solid black;
+        background-color: var(--game-grid-color);
+        justify-content: center;
+        max-width: fit-content;
+    }
+
+    .gridRow{
+        border: 1px dashed var(--game-grid-row-dash-color);
+        /* max-width: 700px; */
+        height: var(--game-cell-size);
+        overflow: hidden;
+    }
+
+    .cell{
+        background-color: var(--game-grid-cell-color);
+        border-bottom: var(--game-cell-borders);
+        width: var(--game-cell-size);
+        height: var(--game-cell-size);
+        float: left;
+    }
+
+    #col-1,#col-2,#col-3,#col-4,#col-5,#col-6,#col-7,#col-8,#col-9,#col-10,
+    #col-11,#col-12,#col-13,#col-14,#col-15,#col-16,#col-17,#col-18,#col-19,#col-20{
+        border-right: var(--game-cell-borders);
+    }
+}
